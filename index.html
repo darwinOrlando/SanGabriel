@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio San Gabriel - Educación de Excelencia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="imagenes/EscudoSGp.png" alt="Logo del Colegio">
+                <h1>Colegio de Bachillerato "San Gabriel"</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#about">Mi Colegio</a>
+                        <ul class="sub-menu">
+                            <li><a href="#history">Historia</a></li>
+                            <li><a href="#mision">Propósito Misional</a></li>
+                            <li><a href="#objetivos">Objetivo Estratégico</a></li>
+                            <li><a href="#himno">Himno</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#asignaturas">Asignaturas</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Educar es formar hombres libres</h2>
+                <p>Educación de calidad con valores humanos y enfoque en el desarrollo profesional</p>
+                <div class="btn-group">
+                    <a href="#asignaturas" class="btn">Ver Asignaturas</a>
+                    <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Sección Historia -->
+<section class="section historia-section" id="history">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestra Historia</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="historia-content">
+            <!-- Carrusel de Imágenes (Izquierda) -->
+            <div class="historia-carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/SoloColegio.png" alt="Instalaciones del Colegio">
+                        <div class="carousel-caption">Instalaciones del Colegio</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/histoDanza.jpg" alt="Danza">
+                        <div class="carousel-caption">participacion de la Danza</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/histoDanza2.jpg" alt="participacion Danza">
+                        <div class="carousel-caption">participacion Danza</div>
+                    </div>
+                      <div class="carousel-item active">
+                        <img src="imagenes/historiaTodos.jpg" alt="Estudiantes 2024">
+                        <div class="carousel-caption">Estudiantes 2024</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/histoTodos.jpg" alt="Estudiantes 2023-2024">
+                        <div class="carousel-caption">Estudiantes 2023-2024</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/histoTodos3.jpg" alt="Estudiantes 2023-2024">
+                        <div class="carousel-caption">Estudiantes 2023-2024</div>
+                    </div>
+                      <div class="carousel-item active">
+                        <img src="imagenes/histoEmprendi.jpg" alt="Emprendimientos">
+                        <div class="carousel-caption">Emprendimientos</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/histoDeporte.jpg" alt="Campeonato 2023">
+                        <div class="carousel-caption">Campeonato 2023</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/histoTodos4.jpg" alt="promoción 2022-2023">
+                        <div class="carousel-caption">promoción 2022-2023</div>
+                    </div>
+                </div>
+                <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+            </div>
+
+            <!-- Texto y Botón (Derecha) -->
+            <div class="historia-texto">
+                <h3> Historia del Colegio de Bachillerato "San Gabriel"</h3>
+                <div class="texto-resumen">
+                   <p>El Colegio de Bachillerato "San Gabriel" surgió en 1991 por iniciativa de líderes 
+                    comunitarios, iniciando como institución particular en la escuela "Diego Noboa" y 
+                    logrando su fiscalización ese mismo año. </p>
+                    <p> Gracias a donaciones de terreno y 
+                    colaboración de padres de familia e instituciones, se construyó su infraestructura 
+                    actual, evolucionando de ciclo básico a bachillerato técnico. Hoy, es un referente 
+                    educativo fruto del esfuerzo colectivo, con enfoque en formación técnica y desarrollo comunitario.</p>
+                </div>
+                
+                <button class="btn btn-leer-mas">Leer más <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Modal "Leer más" -->
+<div class="modal-historia" id="modalHistoria">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Historia del Colegio de Bachillerato "San Gabriel"</h2>
+        <div class="modal-body">
+             <img src="imagenes/SoloColegio.png" class="modal-img">
+             
+            <p>
+           <b>Orígenes y Gestión Comunitaria (1990-1991)</b><br>
+            El Colegio de Bachillerato "San Gabriel" nació del sueño
+             colectivo de un grupo de visionarios moradores del sector, quienes, en la década de 1990, 
+            identificaron la necesidad de contar con una institución educativa de nivel secundario en la
+              localidad. Liderados por los señores Abel Flores, Artemio Arteaga, Susana Carrillo, Zoila Pacheco, 
+              Eusperto Chamba y la señora Haya, iniciaron un proceso de gestiones basado en reuniones comunitarias 
+              y coordinaciones con autoridades educativas de la época.
+              
+            Con el apoyo clave del profesor Ramiro Rosero, entonces vinculado a la Escuela "Vasco Núñez de Balboa", 
+            se logró que la institución iniciara sus actividades en 1991 como un colegio particular, funcionando en 
+            las instalaciones de la Escuela "Diego Noboa" en jornada vespertina, bajo el nombre provisional de "San Miguel"
+             —en honor al recinto—. <br>
+
+            <b>Fiscalización y Consolidación Institucional (1991-1995)</b> <br>
+            Tras persistentes gestiones ante el Congreso Nacional, el 15 de agosto de 1991, se obtuvo la 
+            asignación presupuestaria para su fiscalización, con siete partidas docentes iniciales. 
+            Bajo la dirección interina de la docente Vilma Morejón y con el invaluable aporte de profesores 
+            fundadores —como María Betancourt (Ciencias Naturales), Jorge Molina (Matemáticas), Cumandá Flores 
+            (Lengua y Literatura), Nely García (Inglés) y Ramiro Rosero (Estudios Sociales)—, el colegio comenzó 
+            su labor fiscal en las instalaciones de INCRAE, gracias a un comodato otorgado por la comunidad.<br>
+                <b>Infraestructura y Crecimiento (1995-2000)</b> <br>
+            Uno de los hitos más significativos fue la donación de un terreno por parte de la Cooperativa del Sector,
+             espacio que hoy alberga las instalaciones del colegio. Pese a las limitaciones iniciales —falta de aulas,
+              mobiliario e incluso vías de acceso—, el trabajo conjunto con padres de familia, líderes comunitarios 
+              (como los señores Chumo, Lucas Lapo, Egas, Garófalo y Rosendo Castillo) e instituciones como Petroecuador,
+               permitió la construcción de las primeras aulas y baterías sanitarias, gestionadas ante el Municipio y el
+                Consejo Provincial durante la administración de Eliseo Azuero.
+            Con el traslado a su ubicación actual, se estableció el ciclo básico y, posteriormente, bajo la dirección
+             de la Licenciada Cruz Castillo, se impulsó el cambio de nombre a "San Gabriel" para evitar confusiones con 
+             la Unidad Educativa Fiscomisional "San Miguel" del Cantón Putumayo.<br>
+               <b>Expansión Académica y Desarrollo Territorial</b> <br> 
+            Con el incremento de partidas docentes, se presentó el proyecto para la implementación del bachillerato
+             técnico, inicialmente en Contabilidad y luego reorientado a Comercialización y Ventas. Durante la rectoría 
+             del Magíster Mauricio Vallas, se gestionó la construcción del puente y la vía de acceso —impulsada por el
+              señor Eusperto Chamba—, solucionando un desafío crítico para la conectividad de la comunidad.<br>
+                <b>Legado y Proyección</b> <br> 
+            Hoy, el Colegio "San Gabriel" es un símbolo de perseverancia comunitaria y esfuerzo colectivo. 
+            Su evolución —desde un anhelo vecinal hasta una institución fiscal con especializaciones técnicas— refleja 
+            su compromiso con la educación de calidad, arraigada en valores de solidaridad, innovación y desarrollo sostenible.
+             Cada logro en su historia ha sido posible gracias a la colaboración de docentes, estudiantes, familias y actores 
+             sociales, cimentando un legado que continúa inspirando a las nuevas generaciones.</p>
+             <!-- Texto histórico completo -->
+        </div>
+    </div>
+</div>
+
+    <!-- Sección Propósito Misional -->
+    <section class="section mision-section" id="mision">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title elegant-title">Propósito Misional</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mision-content">
+                <div class="mision-image">
+                    <img src="imagenes/histgradua.jpg" alt="Propósito Misional" class="elegant-img">
+                </div>
+                <div class="mision-cards">
+                    <div class="mision-card elegant-card">
+                       
+                        <p>El Colegio de Bachillerato 'San Gabriel' es una institución educativa comprometida con la
+                            formación integral de jóvenes en el Bachillerato Técnico especializado en Tecnologías de la
+                            Información y Comunicación (TIC) con énfasis en Informática. Nuestro propósito es brindar
+                            una educación de excelencia, basada en principios humanistas, que fomente el desarrollo de
+                            competencias técnicas, críticas y éticas en nuestros estudiantes, preparándolos para los
+                            desafíos de un mundo globalizado y tecnológico.
+                            Integramos la innovación tecnológica con la sostenibilidad ambiental, promoviendo prácticas
+                            responsables e inclusivas que contribuyan al bienestar social y al cuidado del entorno. A
+                            través de una pedagogía contextualizada, buscamos que nuestros estudiantes apliquen sus
+                            conocimientos a la realidad local y global, fortaleciendo su sentido de responsabilidad
+                            ciudadana.
+                            Nuestra institución se distingue por ofrecer una educación de calidad y calidez, centrada en
+                            el desarrollo humano, la equidad y el servicio a la comunidad, formando profesionales
+                            técnicos competentes, líderes comprometidos y agentes de cambio en la sociedad.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Objetivo Estratégico -->
+    <section class="section objetivos-section" id="objetivos">
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title elegant-title">Objetivo Estratégico</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="objetivos-content">
+                <div class="objetivos-text">
+                       <p>"El Colegio de Bachillerato 'San Gabriel' tiene como
+                        objetivo estratégico consolidarse como una institución líder
+                        en educación técnica, mediante una gestión académica innovadora y
+                        docencia planificada, que garantice aprendizajes significativos y pertinentes.
+                        Integramos de manera transversal en nuestro currículo pilares fundamentales
+                        como la tecnología, la sostenibilidad ambiental y la ética social, fomentando una
+                        convivencia armónica entre el ser humano, su entorno natural y la sociedad.
+                        Buscamos impactar positivamente en la calidad de vida de nuestra comunidad educativa y del
+                        entorno en el que nos desarrollamos, formando ciudadanos conscientes, competentes y
+                        comprometidos con el desarrollo sostenible. A través de prácticas pedagógicas dinámicas
+                        y contextualizadas, aspiramos a ser un referente educativo que combine excelencia académica,
+                        responsabilidad ambiental y cohesión social."</p>
+
+                </div>
+                <div class="objetivos-image">
+                    <img src="imagenes/todosSG.jpeg" alt="Objetivos" class="elegant-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+   <!-- Sección Himno -->
+<section class="section himno-section" id="himno">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestro Himno</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Canto a nuestra identidad institucional</p>
+        </div>
+
+        <div class="himno-container">
+            <!-- Columna Izquierda: Bandera -->
+            <div class="himno-bandera">
+                <img src="imagenes/BANDERAsanGabriel.jpg" alt="Bandera del Colegio" class="bandera-img">
+                <div class="bandera-descripcion">
+                    <h3>Nuestra Bandera</h3>
+                    <p>Simboliza los valores y tradiciones de nuestra institución desde 1991</p>
+                </div>
+            </div>
+
+            <!-- Columna Central: Letra del Himno -->
+            <div class="himno-letra">
+                <div class="letra-columnas">
+                    <!-- Columna 1 -->
+                    <div class="columna">
+                        <div class="estrofa">
+                            <h3><i class="fas fa-music"></i> Coro</h3>
+                                <p>¡San Gabriel, faro de esperanza, <br>
+                                    en la frontera tu voz avanza! <br>
+                                    Con valor, fe y dedicación, <br>
+                                    forjamos patria y educación. <br>
+                                </p>
+                       
+                        </div>
+                        
+                        <div class="estrofa">
+                            <h3><i class="fas fa-music"></i> Estrofa I</h3>
+
+                               <p>
+                                    En la ruralidad, tu nombre brilla, <br>
+                                    treinta y cuatro años de noble semilla. <br>
+                                    Eres raíz, eres tradición, <br>
+                                    de un pueblo entero, tu misión. <br>
+                                </p>
+                        </div>
+
+                        <div class="estrofa">
+                            <h3><i class="fas fa-music"></i> Estrofa II</h3>
+
+                              <p>Entre montañas y verdes senderos, <br>
+                                cultivamos sueños verdaderos. <br>
+                                Con libros, lápiz y corazón, <br>
+                                construimos un mejor mañana en la región. <br>
+                             </p>
+                        </div>                                      
+                           
+                    </div>
+                    
+                    <!-- Columna 2 -->
+                    <div class="columna">
+                        <div class="estrofa">
+                            <h3><i class="fas fa-music"></i> Estrofa III</h3>
+                            <p> Maestros, estudiantes, un solo ideal, <br>
+                            trabajando juntos por un futuro igual. <br>
+                            San Gabriel, tu legado es inmortal, <br>
+                            en la frontera, eres luz universal. <br>
+                        </p>
+                        </div>
+                        
+                        <div class="estrofa">
+                            <h3><i class="fas fa-music"></i> Coro Final:</h3>
+                            <p>¡San Gabriel, faro de esperanza, <br>
+                                en la frontera tu voz avanza! <br>
+                                Con valor, fe y dedicación, <br>
+                                forjamos patria y educación. <br>
+
+                            ¡San Gabriel, gloria y honor, <br>
+                            en la ruralidad, eres nuestro valor! <br>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Escudo y Audio -->
+            <div class="himno-escudo">
+                <img src="imagenes/ESSSSS.jpg" alt="Escudo del Colegio" class="escudo-img">
+                <h3>Nuestro Escudo</h3>
+                <p>El escudo del Colegio San Gabriel no es solo un símbolo gráfico; representa la esencia, la historia y los valores que guían a nuestra comunidad educativa. </p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Sección Asignaturas -->
+    <section class="section asignaturas-section" id="asignaturas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Asignaturas</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Programa académico completo para formación integral</p>
+            </div>
+
+            <div class="filtro-asignaturas">
+                <button class="filtro-btn active" data-filter="todas">Todas</button>
+                <button class="filtro-btn" data-filter="ciencias">Ciencias</button>
+                <button class="filtro-btn" data-filter="humanidades">Humanidades</button>
+                <button class="filtro-btn" data-filter="tecnologia">Tecnología</button>
+            </div>
+
+            <div class="asignaturas-grid">
+                <!-- Asignatura 1 -->
+                <div class="asignatura-card" data-categoria="ciencias">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Química</h3>
+                    <p>Estudio de la materia y sus transformaciones</p>
+                    <button class="btn btn-detalle" data-news-id="1">Ver detalles</button>
+                </div>
+
+                <!-- Asignatura 2 -->
+                <div class="asignatura-card" data-categoria="ciencias">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-square-root-alt"></i>
+                    </div>
+                    <h3>Matemáticas</h3>
+                    <p>Desarrollo del pensamiento lógico-matemático</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <!-- Asignatura 3 -->
+                <div class="asignatura-card" data-categoria="humanidades">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Lengua y Literatura</h3>
+                    <p>Dominio de la comunicación escrita y oral</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <!-- Asignatura 4 -->
+                <div class="asignatura-card" data-categoria="tecnologia">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programación</h3>
+                    <p>Fundamentos de desarrollo de software</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <div class="asignatura-card" data-categoria="tecnologia">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Soporte Técnico</h3>
+                    <p>asistencia y solución de problemas relacionados 
+                       con equipos informáticos, software, redes y sistemas tecnológicos</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <div class="asignatura-card" data-categoria="tecnologia">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Diseño Web</h3>
+                    <p>planificar, crear y mantener sitios web</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <div class="asignatura-card" data-categoria="tecnologia">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>FORMACIÓN LABORAL</h3>
+                    <p>ingreso, permanencia y desarrollo en el mundo del trabajo</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <div class="asignatura-card" data-categoria="tecnologia">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>SISTEMAS OPERATIVOS</h3>
+                    <p>programas que actúan como intermediario</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                <div class="asignatura-card" data-categoria="tecnologia">
+                    <div class="asignatura-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>APLICACIONES OFIMATICAS</h3>
+                    <p>realizar tareas de oficina</p>
+                    <button class="btn btn-detalle">Ver detalles</button>
+                </div>
+
+                
+                <!-- Añadir más asignaturas según necesidad -->
+            </div>
+
+            <!-- Modal de Detalles -->
+            <div class="modal-asignatura" id="modalAsignatura">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2 id="modal-titulo">Título Asignatura</h2>
+                    <div class="modal-body">
+                        <div class="modal-info">
+                            <p><strong>Área:</strong> <span id="modal-area"></span></p>
+                            <p><strong>Docente:</strong> <span id="modal-docente"></span></p>
+                            <p><strong>Horario:</strong> <span id="modal-horario"></span></p>
+                        </div>
+                        <div class="modal-descripcion">
+                            <h3>Descripción</h3>
+                            <p id="modal-texto"></p>
+                        </div>
+                        <div class="modal-objetivos">
+                            <h3>Objetivos</h3>
+                            <ul id="modal-lista"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section noticias" id="noticias">
+        <div class="container">
+            <div class="section-title">
+                <h3>Noticias y Eventos</h3>
+            </div>
+            <div class="news-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="academico">Académicos</button>
+                <button class="filter-btn" data-filter="artistico">Artísticos</button>
+                <button class="filter-btn" data-filter="deportivo">Deportivos</button>
+                <button class="filter-btn" data-filter="convivencia">Convivencia</button>
+            </div>
+            <div class="news-grid">
+                <div class="news-card" data-category="academico">
+                    <div class="news-image">
+                        <img src="imagenes/casaAbierta.jpeg" alt="Casa Abierta">
+                    </div>
+                    <div class="news-content">
+                        <h3>Casa Abierta-2025 </h3>
+                        <p>Presentación de proyectos técnicos.</p>
+                        <button class="btn news-modal-btn" data-news-id="1">Ver más</button>
+                    </div>
+                </div>
+
+
+                <div class="news-card" data-category="artistico">
+                    <div class="news-image">
+                        <img src="imagenes/ParticipacionColombia.jpeg" alt="Participación en Colombia">
+                    </div>
+                    <div class="news-content">
+                        <h3>Participación en Colombia</h3>
+                        <p>Participación del grupo de danza en Colombia</p>
+                        <button class="btn news-modal-btn" data-news-id="2">Ver más</button>
+                    </div>
+                </div>
+
+
+
+                 <div class="news-card" data-category="artistico">
+                    <div class="news-image">
+                        <img src="imagenes/eleccRe.jpeg" alt="Elección de la señorita Gabrielina">
+                    </div>
+                    <div class="news-content">
+                        <h3>Elección de la señorita Gabrielina</h3>
+                        <p>Noche social y elección de la señorita Gabrielina</p>
+                        <button class="btn news-modal-btn" data-news-id="3">Ver más</button>
+                    </div>
+                </div>
+
+
+                <div class="news-card" data-category="academico">
+                    <div class="news-image">
+                        <img src="imagenes/simu1.jpeg" alt="simulacros">
+                    </div>
+                    <div class="news-content">
+                        <h3>Simulacros</h3>
+                        <p>simulacros de emergencias</p>
+                        <button class="btn news-modal-btn" data-news-id="4">Ver más</button>
+                    </div>
+                </div>
+
+
+
+                <div class="news-card" data-category="deportivo">
+                    <div class="news-image">
+                        <img src="imagenes/danzaCarnaval.jpeg" alt="deportes">
+                    </div>
+                    <div class="news-content">
+                        <h3>Inaguración de campeonato interno</h3>
+                        <p>Inaguración del campeotato interno de futbol</p>
+                        <button class="btn news-modal-btn" data-news-id="5">Ver más</button>
+                    </div>
+                </div>
+
+
+                <div class="news-card" data-category="convivencia">
+                    <div class="news-image">
+                        <img src="imagenes/ConviAlumnoPaseo.jpeg" alt="Dia de la familia">
+                    </div>
+                    <div class="news-content">
+                        <h3>Dia de la familia</h3>
+                        <p>Compartir con estudiantes y padres de familia</p>
+                        <button class="btn news-modal-btn" data-news-id="6">Ver más</button>
+                    </div>
+                </div>
+                <!-- Más noticias... -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de Contacto  -->
+    <section class="section contacto" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>Estamos disponibles para responder tus consultas</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Información Institucional -->
+                <div class="contact-institucional">
+                    <h3><i class="fas fa-school"></i> Información Institucional</h3>
+
+                    <div class="contact-item">
+                        <a href="https://maps.google.com/?q=Colegio+San+Gabriel,+Av.+Principal+123" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Principal 123, Ciudad</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="https://www.facebook.com/BTCSG21D0/?locale=es_LA" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span>/colegiosangabriel</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@colegiosangabriel.edu.ec"
+                            target="_blank">
+                            <i class="fas fa-envelope"></i>
+                            <span>contacto@colegiosangabriel.edu.ec</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Docentes -->
+                <div class="docentes-container">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Nuestros Docentes</h3>
+                    <div class="docentes-grid">
+                        <!-- Docente 1 -->
+                        <div class="docente-card">
+                            <img src="imagenes/PriscilaRomero.png" alt="Ing. Priscila Romero">
+                            <h4>Ing. Priscila Romero</h4>
+                            <p>Rectora</p>
+                            <div class="docente-contacto">
+                                <a href="https://wa.me/593990660852" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:pricila.romero@sangabrielbt.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Docente 2 -->
+                        <div class="docente-card">
+                            <img src="imagenes/MariCarmen.png" alt="Lic. María del Carmen Olivo">
+                            <h4>Lic. María del Carmen Olivo</h4>
+                            <p>Docente Técnica</p>
+                            <div class="docente-contacto">
+                                <a href="https://wa.me/593989833998" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:maria.olivo@sangabrielbt.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Docente 3 -->
+                        <div class="docente-card">
+                            <img src="imagenes/DarwinMendoza.png" alt="Ing. Darwin Mendoza">
+                            <h4>Ing. Darwin Mendoza</h4>
+                            <p>Docente Técnico</p>
+                            <div class="docente-contacto">
+                                <a href="https://wa.me/593987546704" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:darwin.mendoza@sangabrielbt.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Docente 4 -->
+                        <div class="docente-card">
+                            <img src="imagenes/MarcoGuzman.png" alt="Lic. Marco Guzmán">
+                            <h4>Lic. Marco Guzmán</h4>
+                            <p>Docente</p>
+                            <div class="docente-contacto">
+                                <a href="https://wa.me/593969189894" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:marco.guzman@sangabrielbt.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Docente 5 -->
+                        <div class="docente-card">
+                            <img src="imagenes/BayasMauricio.png" alt="Msc. Mauricio Bayas">
+                            <h4>MSc. Mauricio Bayas</h4>
+                            <p>Docente </p>
+                            <div class="docente-contacto">
+                                <a href="https://wa.me/593992371393" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:mauricio.bayas@sangabrielbt.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-bottom">
+                <p>&copy; Desarrollado por: Cabrera Fernando , Vite Bayron Colegio San Gabriel 2025. Todos los derechos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <div class="modal" id="newsModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Título del Evento</h2>
+            <div class="modal-gallery"></div>
+            <div class="modal-body">
+                <p id="modal-description">Descripción del evento...</p>
+                <div class="event-details">
+                    <p><strong>Fecha:</strong> <span id="modal-date"></span></p>
+                    <p><strong>Lugar:</strong> <span id="modal-location"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="subjectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="subject-modal-title">Nombre de la Asignatura</h2>
+            <div class="modal-body">
+                <h3>Descripción</h3>
+                <p id="subject-description"></p>
+                <h3>Objetivos</h3>
+                <ul id="subject-objectives"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
